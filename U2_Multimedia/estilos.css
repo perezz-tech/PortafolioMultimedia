@@ -1,0 +1,271 @@
+:root{
+    --light-gold:#e6d084;
+    --sunlit-clay:#e8be73;
+    --sunlit-clay-2:#e9ac61;
+    --sandy-brown:#ea9a4f;
+    --toasted-almond:#eb883d;
+
+    --texto:#3c2718;
+    --blanco:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:var(--light-gold);
+    color:var(--texto);
+}
+
+.contenedor{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* HEADER */
+
+.header{
+    background:var(--toasted-almond);
+    padding:25px;
+}
+
+.logo{
+    text-align:center;
+    font-size:35px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* PRINCIPAL */
+
+.principal{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+.etiqueta{
+    font-size:14px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.titulo{
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.descripcion{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.boton-cta{
+    display:inline-block;
+    background:var(--texto);
+    color:white;
+    padding:15px 30px;
+    cursor:pointer;
+    border-radius:8px;
+    box-shadow:6px 6px 0 var(--toasted-almond);
+    transition:0.3s;
+}
+
+.boton-cta:hover{
+    transform:scale(1.05);
+}
+
+/* IMAGEN HERO */
+
+.imagen-principal{
+    background-image:
+    linear-gradient(
+    rgba(206,159,59,.2),
+    rgba(216,169,65,.2)
+    ),
+    url("ejemplo.jpg");
+
+    width:100%;
+    height:300px;
+
+    background-size:cover;
+    background-position:center;
+
+    border:3px solid var(--toasted-almond);
+    border-radius:15px;
+
+}
+
+
+/* PRODUCTOS */
+
+.productos{
+    background:var(--sunlit-clay);
+    padding:80px 0;
+}
+
+.titulo-seccion{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo2{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.reticula{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.tarjeta{
+    background:var(--light-gold);
+    padding:20px;
+    border-radius:12px;
+    border:2px solid var(--sunlit-clay-2);
+}
+
+.imagen1{
+    
+    background-image:
+    linear-gradient(
+    rgba(206,159,59,.2),
+    rgba(216,169,65,.2)
+    ),
+    url("ejemplo1.jpg");
+
+    width:100%;
+    height:300px;
+
+    background-size:cover;
+    background-position:center;
+
+    border:3px solid var(--toasted-almond);
+    border-radius:15px;
+
+}
+
+.imagen2{
+
+    background-image:
+    linear-gradient(
+    rgba(206,159,59,.2),
+    rgba(216,169,65,.2)
+    ),
+    url("ejemplo2.jpg");
+
+    width:100%;
+    height:300px;
+
+    background-size:cover;
+    background-position:center;
+
+    border:3px solid var(--toasted-almond);
+    border-radius:15px;
+
+}
+
+.imagen3{
+    
+    background-image:
+    linear-gradient(
+    rgba(206,159,59,.2),
+    rgba(216,169,65,.2)
+    ),
+    url("ejemplo3.jpg");
+
+    width:100%;
+    height:300px;
+
+    background-size:cover;
+    background-position:center;
+
+    border:3px solid var(--toasted-almond);
+    border-radius:15px;
+
+}
+
+
+.titulo-tarjeta{
+    font-size:24px;
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.texto-tarjeta{
+    font-size:18px;
+}
+
+/* PROMOCION */
+
+.promocion{
+    background:var(--sandy-brown);
+    margin-top:80px;
+    margin-bottom:80px;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.titulo-promocion{
+    font-size:35px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:var(--toasted-almond);
+    text-align:center;
+    padding:30px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px){
+
+    .principal{
+        grid-template-columns:1fr;
+    }
+
+    .reticula{
+        grid-template-columns:1fr;
+    }
+
+    .promocion{
+        grid-template-columns:1fr;
+    }
+
+    .titulo{
+        font-size:40px;
+    }
+
+}
